@@ -1,0 +1,13 @@
+<br>
+<br>
+<br>
+<div>
+  <ol>
+    <ul ng-repeat='item in found'>
+      <strong>Short name</strong> : {{item.short_name}} ||  <strong>Name</strong> : {{item.name}} <br>
+      <strong>Description</strong> : {{item.description}} || <button ng-click='onRemove({index: $index})'>Don't want this one!</button>
+      <br>---------------------------------------------------------------------------</br>
+    </ul>
+  </ol>
+</div>
+<div>{{empty}}</div>
